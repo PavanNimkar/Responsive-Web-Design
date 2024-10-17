@@ -1,0 +1,269 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: poppins;
+  /* position: relative; */
+}
+
+:root {
+  --logo: #ffb703;
+  --navbar: #023047;
+}
+
+/* Nav Bar */
+
+#nav-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20em;
+  padding: 0.5em 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+#nav-bar ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+#nav-bar ul li {
+  text-decoration: none;
+  /* color: white; */
+  list-style: none;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+#logo img {
+  height: 3em;
+}
+
+#nav-bar ul li a:hover {
+  background-color: var(--logo);
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  transition: ease-in-out 0.5s;
+}
+
+/* Hero Section */
+
+#hero {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+#hero #hero-img {
+  background-image: url("./assets/hero.jpg");
+  width: 100vw;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+
+  /* height: fit-content; */
+}
+
+#hero-img::before {
+  content: "";
+  background-color: black;
+  /* z-index: 10; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+}
+
+.middle-logo {
+  height: 10rem;
+}
+
+#hero-qns {
+  font-size: 3.5rem;
+}
+
+#hero-input {
+  width: 70%;
+  height: 90%;
+  outline: none;
+}
+
+#hero-select {
+  width: 30%;
+  height: 100%;
+  margin-left: 0.5em;
+  /* font-family: poppins; */
+  outline: none;
+}
+
+#hero-input,
+#hero-select {
+  background-color: transparent;
+  border: none;
+  font-family: poppins;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 2.5em;
+  background-color: white;
+  padding: 0.3em 2em;
+  border-radius: 2rem;
+}
+
+i {
+  /* background-color: black; */
+  color: #ff9000;
+  font-size: 1.2em;
+}
+
+#verticle-line {
+  width: 2px;
+  height: 50%;
+  background-color: #d7d8d9;
+  margin: 1em;
+}
+
+.fa-magnifying-glass {
+  margin-right: 0.5em;
+}
+
+/* Services */
+
+#services {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 6em;
+  gap: 1.8em;
+}
+
+.img-container img {
+  border-radius: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
+/* Collections */
+
+.collection-imgs-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.img-box {
+  width: 14em;
+  height: 22em;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.9rem;
+}
+
+#collections p {
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+/* Contact Us */
+.call,
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  height: 4em;
+}
+
+.contact-us-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* About Us */
+
+.about-us-container {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin: 0 6rem;
+}
+
+.abt-img {
+  width: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.abt-img img {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  height: 10vh;
+  width: 100vw;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
